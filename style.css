@@ -14,12 +14,13 @@ body {
 
 .to {
  background-color: whitesmoke;
- width: 50vw;
+ width: auto;
  border-radius: 5px;
+ padding: 10px;
 }
 
 .to h2 {
- padding: 20px;
+ padding: 20px 0 20px 10px;
 }
 
 .to .do {
@@ -43,10 +44,14 @@ body {
  color: white;
  font-weight: 700;
  font-size: 15px;
- max-height: 50px;
+ max-height: 40px;
  padding: 8px;
  margin: 10px 5px 10px 0px;
  box-shadow: 0 2px 2px black;
+}
+
+#delete{
+    margin-right: 10px;
 }
 
 .list .content {

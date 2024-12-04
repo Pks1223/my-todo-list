@@ -2,9 +2,10 @@ const add = document.getElementById("btn-add");
 add.addEventListener("click", a => {
  let write = document.querySelector("#inputfield input").value;
  if (write.length == "") {
-  alert("You not enter any task...!");
- };
- item(write);
+    alert("You not enter any task...!");
+ } else{
+    item(write);
+ }
 });
 
 function item(task){
