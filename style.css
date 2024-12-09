@@ -34,8 +34,14 @@ body {
  font-size: 15px;
 }
 
+.actionsBtnBox{
+    display: flex;
+    flex-direction: column;
+}
+
 #btn-add,
-#delete {
+#delete,
+#update {
  background-color: lime;
  border: none;
  border-radius: 4px;
@@ -50,8 +56,14 @@ body {
  box-shadow: 0 2px 2px black;
 }
 
+#delete,
+#update{
+    font-size: 10px;
+    margin: 0px 5px 0 0;
+}
+
 #delete{
-    margin-right: 10px;
+    margin-top: 7px;
 }
 
 .list .content {
