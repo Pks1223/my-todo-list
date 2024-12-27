@@ -9,7 +9,7 @@ import { FaArrowLeft } from "react-icons/fa";
 function Navbar() {
   return (
     <>
-      <header>To Do App</header>
+      <header><p>To Do App</p> <input type="text" placeholder='Search Your To-Do....'/></header>
       <nav>
         <ul>
           <li className="nav_items"><FaArrowLeft />Navigation</li>
