@@ -17,20 +17,28 @@ function ToDo() {
     }
   };
 
+  let list = todoList.map((value, index) => {
+    return <ToDOListItems todo={value} key={index} />;
+  });
+
   return (
-    <div>
+    <div className="formDiv">
       <form onSubmit={saveToDo}>
         <input type="text" name="todoInp" placeholder="Enter your To-DO." />{" "}
         <button>Add</button>
       </form>
-      <div>
-        <ul>
-          <li>
-            HTML <span>&times;</span>
-          </li>
-        </ul>
+      <div className="todoListDiv">
+        <ul>{list}</ul>
       </div>
     </div>
+  );
+}
+
+function ToDOListItems(props) {
+  return (
+    <li>
+      {props.todo} <span>&times;</span>
+    </li>
   );
 }
 

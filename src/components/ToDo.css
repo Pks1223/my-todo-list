@@ -1,0 +1,46 @@
+.formDiv form{
+    display: none;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid red;
+    height: 5rem; */
+}
+.formDiv form input{
+    padding: .4rem;
+    font-size: 1rem;
+    margin-right: 1rem;
+    width: 30rem;
+}
+.formDiv form button{
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .4rem 1rem;
+}
+.formDiv ul li{
+    list-style: none;
+}
+
+.formDiv .todoListDiv{
+    margin-top: 2rem;
+}
+.formDiv .todoListDiv ul{
+    display: flex;
+}
+.formDiv .todoListDiv ul li{
+    width: 20rem;
+    height: 5rem;
+    max-height: 10rem;
+    max-width: 30rem;
+    border: 1px solid red;
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+.formDiv .todoListDiv ul li span{
+    position: absolute;
+    right: 1rem;
+    top: .2rem;
+    font-size: 2rem;
+    cursor: pointer;
+}

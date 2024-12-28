@@ -1,5 +1,5 @@
-import React from 'react'
-import './Navbar.css';
+import React from "react";
+import "./Navbar.css";
 import { FaHome } from "react-icons/fa";
 import { CgNotes } from "react-icons/cg";
 import { IoMdMore } from "react-icons/io";
@@ -9,18 +9,39 @@ import { FaArrowLeft } from "react-icons/fa";
 function Navbar() {
   return (
     <>
-      <header><p>To Do App</p> <input type="text" placeholder='Search Your To-Do....'/></header>
+      <header>
+        <p>To Do App</p>{" "}
+        <div>
+          <input type="text" placeholder="Search Your To-Do...." />
+          <button>CREATE</button>
+        </div>
+      </header>
       <nav>
         <ul>
-          <li className="nav_items"><FaArrowLeft />Navigation</li>
-          <li className="nav_items"><FaHome />To-Do</li>
-          <li className="nav_items"><CgNotes />Notes</li>
-          <li className="nav_items"><IoMdMore />More</li>
-          <li className="nav_items"><MdOutlineBugReport />Report Bugs</li>
+          <li className="nav_items">
+            <FaArrowLeft />
+            Navigation
+          </li>
+          <li className="nav_items">
+            <FaHome />
+            To-Do
+          </li>
+          <li className="nav_items">
+            <CgNotes />
+            Notes
+          </li>
+          <li className="nav_items">
+            <IoMdMore />
+            Tips
+          </li>
+          <li className="nav_items">
+            <MdOutlineBugReport />
+            Report Bugs
+          </li>
         </ul>
       </nav>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

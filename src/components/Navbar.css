@@ -4,10 +4,19 @@ header {
   font-weight: 600;
   display: flex;
 }
-header input{
+header div{
+  flex-basis: 80%;
   margin-left: 4rem;
+}
+header div input{
   width: 40%;
-  padding-left: 1rem;
+  padding: .4rem 1rem;
+  font-size: 1rem;
+}
+header div button{
+  padding: .4rem 1rem;
+  font-size: 1rem;
+  margin-left: 2rem;
 }
 nav {
   position: absolute;
