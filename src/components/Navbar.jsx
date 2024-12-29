@@ -6,14 +6,24 @@ import { IoMdMore } from "react-icons/io";
 import { MdOutlineBugReport } from "react-icons/md";
 import { FaArrowLeft } from "react-icons/fa";
 
-function Navbar() {
+function Navbar({formDiv, editFormDiv}) {
+  let addTaskForm = () => {
+    editFormDiv(!formDiv);
+  }
+  let createBtn;
+  if(formDiv){
+    createBtn = "HIDE FORM";
+  }else{
+    createBtn = "CREATE";
+  }
+  
   return (
     <>
       <header>
-        <p>To Do App</p>{" "}
+        <p>To Do App</p>
         <div>
           <input type="text" placeholder="Search Your To-Do...." />
-          <button>CREATE</button>
+          <button onClick={addTaskForm}>{createBtn}</button>
         </div>
       </header>
       <nav>

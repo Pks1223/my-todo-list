@@ -1,10 +1,14 @@
 .formDiv form{
-    display: none;
+    /* display: flex; */
     /* position: absolute;
     top: 0;
-    left: 0;
-    border: 2px solid red;
-    height: 5rem; */
+    left: 0; */
+    width: max-content;
+    border: 2px solid #393939;
+    /* height: 5rem; */
+}
+.formDiv form.hide{
+    display: none;
 }
 .formDiv form input{
     padding: .4rem;
@@ -26,16 +30,22 @@
 }
 .formDiv .todoListDiv ul{
     display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
 }
 .formDiv .todoListDiv ul li{
-    width: 20rem;
+    width: 23rem;
     height: 5rem;
     max-height: 10rem;
     max-width: 30rem;
-    border: 1px solid red;
+    border: 1px solid #7b7b7b;
     margin: 1rem;
     padding: 1rem;
     position: relative;
+    border-radius: 2px;
+}
+.formDiv .todoListDiv ul li.completedToDo{
+    text-decoration: line-through;
 }
 .formDiv .todoListDiv ul li span{
     position: absolute;
