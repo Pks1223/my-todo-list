@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import "../styles/Navbar.css";
 import { FaHome } from "react-icons/fa";
 import { CgNotes } from "react-icons/cg";
 import { IoMdMore } from "react-icons/io";

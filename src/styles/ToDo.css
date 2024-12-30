@@ -34,23 +34,38 @@
     /* flex-direction: row-reverse; */
 }
 .formDiv .todoListDiv ul li{
-    width: 23rem;
-    height: 5rem;
+    width: 36rem;
+    height: fit-content;
     max-height: 10rem;
-    max-width: 30rem;
+    max-width: 36rem;
     border: 1px solid #7b7b7b;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     padding: 1rem;
     position: relative;
     border-radius: 2px;
 }
 .formDiv .todoListDiv ul li.completedToDo{
     text-decoration: line-through;
+    color: #ffffff84;
 }
 .formDiv .todoListDiv ul li span{
     position: absolute;
     right: 1rem;
-    top: .2rem;
+    top: .5rem;
     font-size: 2rem;
     cursor: pointer;
+}
+.formDiv .todoListDiv ul li span svg{
+    transition: .2s ease-in-out;
+    margin-left: .4rem;
+}
+.formDiv .todoListDiv ul li p{
+    width: 86%;
+    height: fit-content;
+}
+.formDiv .todoListDiv ul li span svg:first-child:hover{
+    color: #0080ff;
+}
+.formDiv .todoListDiv ul li span svg:nth-child(2):hover{
+    color: #15ff00;
 }

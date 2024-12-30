@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import "./ToDo.css";
+import "../styles/ToDo.css";
+import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
+import { BiEditAlt } from "react-icons/bi";
 
 function ToDo({formDiv}) {
   let [todoList, setTodoList] = useState([]);
@@ -46,7 +48,7 @@ function ToDOListItems({todo, indexNumber, todoList, setTodoList}) {
   }
   return (
     <li className={(status)? "completedToDo" : ""} onClick={checkStatus}>
-      {todo} <span onClick={deleteToDo}>&times;</span>
+      <p contentEditable="true">{todo}</p><span><BiEditAlt /><IoCheckmarkDoneCircleSharp onClick={deleteToDo}/></span>
     </li>
   );
 }
