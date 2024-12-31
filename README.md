@@ -6,7 +6,8 @@ This project is a simple and interactive Todo List application developed using H
 - Delete Tasks: Users can delete tasks that are no longer needed.
 - Mark as Completed: Users can mark tasks as completed by clicking on them.
 - Responsive Design: The application is fully responsive and works seamlessly on different devices.
-
+## Bugs 
+-- When use input multiple blank spaces then it add task.
 ## Technologies Used 🛠️
 - HTML: For structuring the content of the web page.
 - CSS: For styling the application and making it visually appealing.
