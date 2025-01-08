@@ -7,7 +7,7 @@
     top: 4rem;
     border: none;
 }
-.formDiv form.hide textarea, .formDiv form.hide button{
+.formDiv form.hide textarea, .formDiv form.hide button, .formDiv form.hide input{
     display: none;
 }
 .formDiv form{
@@ -22,6 +22,12 @@
     flex-direction: column;
     z-index: 999;
     transition: all .2s ease-out;
+}
+.formDiv form input{
+    font-size: 1rem;
+    padding: .4rem;
+    width: 30rem;
+    margin-bottom: 1rem;
 }
 .formDiv form textarea{
     padding: .4rem;

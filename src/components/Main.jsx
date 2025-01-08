@@ -1,10 +1,12 @@
 import React from 'react'
 import ToDo from './ToDo';
+import Notes from './Notes'
 
-function Main({formDiv}) {
+function Main({formDiv, secActive}) {
     return (
         <main>
-          <ToDo formDiv={formDiv}/>
+            {secActive === "ToDo" && <ToDo formDiv={formDiv}/>}
+            {secActive === "Notes" && <Notes formDiv={formDiv}/>}
         </main>
     )
 }

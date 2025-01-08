@@ -5,12 +5,12 @@ import Main from './components/Main';
 
 function App() {
   let [formDiv, editFormDiv] = useState(false);
-  // console.log(formDiv);
+  const [secActive, setsecActive] = useState("Notes");
   
   return (
     <>
       <Navbar formDiv={formDiv} editFormDiv={editFormDiv}/>
-      <Main formDiv={formDiv}/>
+      <Main  formDiv={formDiv} secActive={secActive}/>
     </>
   )
 }
