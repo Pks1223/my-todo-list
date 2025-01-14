@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 function Notes({formDiv}) {
     let [notesList, setNotesList] = useState([]);
 
-  let saveNotes = (event) => {
+    let saveNotes = (event) => {
     event.preventDefault();
 
     let notesTitleInp = event.target.notesTitleInp.value;
